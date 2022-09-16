@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/styles.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"src.a2b27638.css","sourceRoot":"..","sourcesContent":["body {\n  font-family: sans-serif;\n  background-color: green;\n}\n\nh1 {\n  color: purple;\n}\n\ntable,\nth,\ntd {\n  border: 1px solid red;\n  color: yellow;\n}\n"]}
