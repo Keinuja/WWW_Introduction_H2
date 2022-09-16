@@ -207,9 +207,23 @@ function lisaa() {
   admin.insertCell = document.getElementById("input-admin").value;
 }
 
+function tyhjenna() {
+  var otsikko = 1;
+  var table = document.getElementById("mytable");
+  var maara = table.rows.length;
+
+  for (var i = otsikko; i < maara; i++) {
+    table.deleteRow(maara);
+  }
+}
+
 var lomakeNappi = document.getElementById("lomake");
+var tyhjennysNappi = document.getElementById("tyhjennysnappi");
 lomakeNappi.addEventListener("click", function () {
   lisaa();
+});
+tyhjennysNappi.addEventListener("click", function () {
+  tyhjenna();
 });
 },{"./styles.css":"src/styles.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
