@@ -14,8 +14,23 @@ function lisaa() {
   admin.insertCell = document.getElementById("input-admin").value;
 }
 
+function tyhjenna() {
+  var otsikko = 1;
+  var table = document.getElementById("mytable");
+  var maara = table.rows.length;
+
+  for (var i = otsikko; i < maara; i++) {
+    table.deleteRow(maara);
+  }
+}
+
 var lomakeNappi = document.getElementById("lomake");
+var tyhjennysNappi = document.getElementById("tyhjennysnappi");
 
 lomakeNappi.addEventListener("click", function () {
   lisaa();
+});
+
+tyhjennysNappi.addEventListener("click", function () {
+  tyhjenna();
 });
